@@ -6,6 +6,8 @@ import { Product } from "@/data/products";
 import Link from "next/link";
 import { useState } from "react";
 
+/* eslint-disable @next/next/no-img-element */
+
 interface ProductCardProps {
   product: Product;
   index?: number;

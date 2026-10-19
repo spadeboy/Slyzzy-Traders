@@ -1,4 +1,5 @@
 import { businessInfo } from "@/data/products";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -17,19 +18,19 @@ export default function Footer() {
             <h4 className="font-semibold mb-4 text-sm tracking-wider uppercase">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="text-sm opacity-90 hover:opacity-100 transition-opacity">
+                <Link href="/" className="text-sm opacity-90 hover:opacity-100 transition-opacity">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/catalog" className="text-sm opacity-90 hover:opacity-100 transition-opacity">
+                <Link href="/catalog" className="text-sm opacity-90 hover:opacity-100 transition-opacity">
                   Catalog
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="text-sm opacity-90 hover:opacity-100 transition-opacity">
+                <Link href="/contact" className="text-sm opacity-90 hover:opacity-100 transition-opacity">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

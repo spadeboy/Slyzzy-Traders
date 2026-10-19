@@ -2,10 +2,11 @@
 
 import { ReactLenis } from "@studio-freight/react-lenis";
 
-export default function LenisProvider({ children }: { children: any }) {
+/* eslint-disable @typescript-eslint/no-explicit-any */
+export default function LenisProvider({ children }: { children: React.ReactNode }) {
   return (
     <ReactLenis root options={{ lerp: 0.1, duration: 1.5, smoothWheel: true }}>
-      {children}
+      {children as any}
     </ReactLenis>
   );
 }

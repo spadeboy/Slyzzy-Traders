@@ -5,6 +5,8 @@ import Link from "next/link";
 import { featuredProducts } from "@/data/products";
 import { useState, useEffect } from "react";
 
+/* eslint-disable @next/next/no-img-element */
+
 export default function Home() {
   const { scrollYProgress } = useScroll();
   const backgroundTextY = useTransform(scrollYProgress, [0, 1], [0, 200]);

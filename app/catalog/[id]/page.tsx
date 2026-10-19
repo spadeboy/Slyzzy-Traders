@@ -4,7 +4,9 @@ import { motion } from "framer-motion";
 import { useParams } from "next/navigation";
 import { products } from "@/data/products";
 import Link from "next/link";
-import { ArrowLeft, ShoppingCart, Star, Check, Diamond } from "lucide-react";
+import { ArrowLeft, ShoppingCart, Check, Diamond } from "lucide-react";
+
+/* eslint-disable @next/next/no-img-element */
 
 export default function ProductDetail() {
   const params = useParams();
